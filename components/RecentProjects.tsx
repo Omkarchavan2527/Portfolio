@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { FaLocationArrow } from "react-icons/fa6";
 
 import { projects } from "@/data";
@@ -9,8 +10,7 @@ const RecentProjects = () => {
   return (
     <div className="py-20">
       <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        A small selection of <span className="text-purple">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -27,12 +27,21 @@ const RecentProjects = () => {
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <Image
+                    src="/bg.png"
+                    alt="Background"
+                    fill
+                    style={{ objectFit: "cover" }}
+                    priority
+                  />
                 </div>
-                <img
+                <Image
                   src={item.img}
-                  alt="cover"
+                  alt="Cover"
+                  width={300}
+                  height={180}
                   className="z-10 absolute bottom-0"
+                  unoptimized // remove this if your images are local or domain is added in next.config.js
                 />
               </div>
 
@@ -60,7 +69,14 @@ const RecentProjects = () => {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <Image
+                        src={icon}
+                        alt="Icon"
+                        width={24}
+                        height={24}
+                        className="p-2"
+                        unoptimized
+                      />
                     </div>
                   ))}
                 </div>
