@@ -126,13 +126,18 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link:"https://github.com/Omkarchavan2527"
   },
   {
     id: 2,
     img: "/twit.svg",
+    link:"https://x.com/Omkar17rp"
+
   },
   {
     id: 3,
     img: "/link.svg",
+    link:""
+
   },
 ];
