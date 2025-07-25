@@ -12,11 +12,12 @@ const RecentProjects = () => {
       <h1 className="heading">
         A small selection of <span className="text-purple">recent projects</span>
       </h1>
+
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
           >
             <PinContainer
               title="/ui.aceternity.com"
@@ -31,17 +32,19 @@ const RecentProjects = () => {
                     src="/bg.png"
                     alt="Background"
                     fill
-                    style={{ objectFit: "cover" }}
+                    className="object-cover"
                     priority
+                    sizes="100vw"
                   />
                 </div>
+
                 <Image
                   src={item.img}
                   alt="Cover"
                   width={300}
                   height={180}
-                  className="z-10 absolute bottom-0"
-                  unoptimized // remove this if your images are local or domain is added in next.config.js
+                  className="z-10 absolute bottom-0 object-contain"
+                  sizes="(max-width: 768px) 80vw, 300px"
                 />
               </div>
 
@@ -74,8 +77,8 @@ const RecentProjects = () => {
                         alt="Icon"
                         width={24}
                         height={24}
-                        className="p-2"
-                        unoptimized
+                        className="p-2 object-contain"
+                        sizes="24px"
                       />
                     </div>
                   ))}
