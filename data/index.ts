@@ -7,7 +7,7 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I love turning ideas into reality through thoughtful design and development.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -69,7 +69,7 @@ export const gridItems = [
 ];
 
 export const projects = [
-  
+
   {
     id: 1,
     title: "Animated Apple Iphone 3D Website",
@@ -94,29 +94,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: " Interactive Web Application",
+    desc: "Designed and implemented user interfaces for a dynamic web application using React.js. Focused on creating responsive layouts, managing application state with Redux, and integrating with RESTful APIs to fetch and display data.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Cloud Infrastructure & Services",
+    desc: "Gained hands-on experience with fundamental cloud computing concepts and services, including deploying applications and managing resources on platforms like AWS or Google Cloud Platform (GCP). Familiar with cloud storage, compute, and networking.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Backend & API Development",
+    desc: "Adept at designing and implementing scalable backend services using Node.js and Express.js. Proficient in building secure RESTful APIs, managing data with MongoDB/PostgreSQL, and handling authentication/authorization flows, often deployed to cloud environments.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Cloud Deployment & DevOps Principles",
+    desc: "Understands principles of cloud-native deployment and basic DevOps practices. Experience with containerization using Docker and orchestrating deployments, ensuring efficient and automated application delivery in cloud environments.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -126,18 +126,18 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link:"https://github.com/Omkarchavan2527"
+    link: "https://github.com/Omkarchavan2527"
   },
   {
     id: 2,
     img: "/twit.svg",
-    link:"https://x.com/Omkar17rp"
+    link: "https://x.com/Omkar17rp"
 
   },
   {
     id: 3,
     img: "/link.svg",
-    link:""
+    link: ""
 
   },
 ];
